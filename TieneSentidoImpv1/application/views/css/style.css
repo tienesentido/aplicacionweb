@@ -1,0 +1,206 @@
+@charset "utf-8";
+																	
+
+
+        
+body{
+	font-family:Arial, Helvetica, sans-serif;
+        
+	}
+        
+        
+/*//////////////////////////////////////////////////////////////////////////////  inicia Header///////////////////////////////////////////////////////////////////////////////*/        
+/*header {width: 100%;
+       height: 100px;
+       background: rgba(245, 248, 245,0.2);
+       position: relative;
+}*/
+
+h1{text-align:center;height:50px;line-height:50px;color:red;}
+header nav{height:100px;background:rgba(245, 248, 245, 0.5); width:100%;}
+header nav ul{display:table;margin:0 auto;}
+header nav ul li{list-style:none;float:left;position: relative; top: 46px;}
+header nav ul li a:link,header nav ul li a:active,header nav ul li a:visited{line-height:40px;color:#008fd1;text-decoration:none;padding:0 20px;display:block}
+	
+.fixed{box-shadow:0 0 10px rgba(0,0,0,0.5);position:fixed;top:0; z-index: 100;}
+	
+.contenedor{width:50%;margin:20px auto}
+
+
+
+
+.DivLogo{
+    margin-top: auto;
+    float: left;
+    left: -300px;;
+    position: relative;
+    top: -34px;
+}
+
+.header{
+    float: left;
+    left: -32%;
+    position: relative;
+    top: -2px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////  termina Header///////////////////////////////////////////////////////////////////////////////*/ 
+.contenedor1{
+    
+    
+    
+    position: relative;
+    text-align: center;
+    min-height: 300px;
+    width: 100%;
+    margin-bottom:120px;
+    
+}       
+  
+
+.contenedor2{
+    
+    
+    
+    position: relative;
+    text-align: center;
+    min-height: 300px;
+    width: 100%;
+    margin-bottom:-180px;
+    
+}
+
+.contenedorARTmenu{background:#fff;
+height: 300px;
+width: 300px;
+float: left;
+position: relative;
+display: block;
+margin-left: 65px;}
+
+.Artcontent{
+    text-align: center;
+}
+
+
+.contenedor1 .Artcontent h2 {
+color: #4d4d4d;
+font-size: 369.23%;
+letter-spacing: -1px;
+line-height: 1em;
+margin-bottom: 0.4em;
+}
+
+.contenedor1 .Artcontent p {
+color: #999;
+font-size: 150%;
+font-weight: 100;
+line-height: 1.4em;
+text-align: justify;
+margin-bottom: 30px;
+}
+
+.contenedor1 .Artcontent h4 {
+color: #4d4d4d;
+font-size: 215.38%;
+line-height: 1em;
+margin-bottom: 0.6em;
+float: left;
+}
+
+
+
+.content.wide {
+padding-bottom: 2.93%;
+padding-left: 10.41%;
+padding-right: 10.41%;
+margin-bottom: -85px;
+}
+
+.content.wide1 {
+padding-bottom: 2.93%;
+padding-left: 10.41%;
+padding-right: 10.41%;
+
+}
+
+.content h2 {
+color: #4d4d4d;
+font-size: 369.23%;
+letter-spacing: -1px;
+line-height: 1em;
+margin-bottom: 0.4em;
+}
+
+.content h3 {
+color: #999;
+font-size: 150%;
+line-height: 1.3em;
+}
+
+.columns {
+padding-top: 67px;
+overflow: hidden;
+margin-bottom: 110px;
+}
+.columns .col {
+background: url(../images/bg-col.png) top right repeat-y;
+float: left;
+text-align: center;
+width: 20%;
+padding: 0 2.15%;
+padding-bottom: 500em;
+margin-bottom: -500em;
+}
+.columns .col h4.icon-check {
+background: url(../images/icon-check.png) no-repeat top center;
+color: #4d4d4d;
+font-size: 24px;
+margin-bottom: 0.5em;
+padding-top: 44px;
+}
+
+.columns .col p {
+color: #999999;
+font-size: 15px;
+line-height: 24px;
+}
+
+p.legal {
+color: #cccccc;
+font-size: 11px;
+line-height: 15px;
+}
+
+.bannerFijo{
+    width: 100%;
+    background: no-repeat top center #fff;
+    margin-bottom: 153px!important;
+}
+/*-----------------------------------------------------------------------footer-----------------------------------------------------------------*/
+
+footer{height:100px;background:rgba(245, 248, 245, 0.5); width:100%;
+
+}
+
+footer div{height:100px;background:rgba(245, 248, 245, 0.5); width:100%;}
+footer div ul{display:table;margin:0 auto;}
+footer div ul li{list-style:none;float:left;position: relative; top: 46px;}
+footer div ul li a:link,footer div ul li a:active,footer div  ul li a:visited{line-height:40px;color:#008fd1;text-decoration:none;padding:0 20px;display:block}
+.feet{box-shadow:0 0 10px rgba(0,0,0,0.5);top:0; z-index: 100;}
+/*----------------------------------------------------------------------- termina footer-----------------------------------------------------------------*/
+/*בבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבquienesSomosבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבב*/
+.bodyQuienes{background:#f0f0f0;}
+.headerInt{background:url(/yt/creators/medias/images/yt-creators-workingtogether-hero.png) no-repeat center #b547ae;
+           position: relative;
+            top: -100px;
+            z-index: -1;}
+.headerInt2{min-height:500px;}
+.contentQuien{min-height:600px;
+             background:#ffffff;
+             position: relative;
+             top: -184px;
+             margin-bottom: 40px;
+}
+
+/*בבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבquienesSomosבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבב*/
