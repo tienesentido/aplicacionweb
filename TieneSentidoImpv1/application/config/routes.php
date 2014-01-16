@@ -44,6 +44,7 @@ $route['mision'] = "cmision";
 $route['objetivos'] = "cobjetivos";
 $route['quienes'] = "cquienes";
 $route['vision'] = "cvision";
+$route['administrarcontenido'] = "cadministrarcontenido";
 $route['404_override'] = '';
 
 
