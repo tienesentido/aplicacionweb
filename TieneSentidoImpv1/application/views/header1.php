@@ -35,7 +35,7 @@
     <meta name="robots" content="index,follow,all"/>
     <title>tieneSentido</title>
     
-    <?php if ($nombreVentana == 'index.php'){ ?> 
+  
     <link rel="stylesheet" type="text/css" href="application/views/css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="application/views/css/style.css"/>
     <link rel="stylesheet" type="text/css" href="application/views/css/970_6_10.css"/>
@@ -81,59 +81,13 @@
 		});
     </script>
     
-   <?php }else {?> 
-       
-    <link rel="stylesheet" type="text/css" href="application/views/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="application/views/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="application/views/css/970_6_10.css"/>
-    <link rel="shortcut icon" type="image/xicon" href="application/views/images/favicon.ico"/>
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" type="text/css" href="PublicResources/utilidades/skdslider/src/skdslider.css"/>
-    
-    <style type="text/css">
-    .demo-code{ background-color:#ffffff; border:1px solid #333333; display:block; padding:10px;}
-    #demo1{ width:100%; height:500px; margin:0 auto;}
-    #demo1 ul.slides li{ height:485px;}
-    .option-table td{ border-bottom:1px solid #eeeeee;}
-    </style>
-    
-    
-    <script type="text/javascript" language="javascript" src="PublicResources/javascripts/jquery-1.10.2.js"></script>
-    <script type="text/javascript" language="javascript" src="PublicResources/javascripts/funciones.js" ></script>
-    <!--<script type="text/javascript" language="javascript" src="PublicResources/utilidades/js/modernizr.custom.86080.js"></script>-->
-    <script type="text/javascript" laguage="javascript" src="PublicResources/utilidades/skdslider/src/skdslider.min.js"></script>
-    
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-44683724-1', 'kwplay.com');
-  ga('send', 'pageview');
-
-    </script> 
-    
-    <script>$(window).scroll(function()
-		{
-			if ($(this).scrollTop() > 50) $('nav').addClass("fixed").fadeIn();
-			else $('nav').removeClass("fixed");
-		});
-     </script>
-    
-    <script type="text/javascript">
-		jQuery(document).ready(function(){
-			jQuery('#demo').skdslider({'delay':5000, 'fadeSpeed': 2000,'showNextPrev':true,'showPlayButton':false,'autoStart':true});
-			jQuery('#demo1').skdslider({'delay':5000, 'fadeSpeed': 2000,'autoStart':true,'pauseOnHover':true});
-		});
-    </script>
-  <?php } ?> 
+  
    
     
 </head>
 
 <body>
-<?php if ($nombreVentana == 'index.php'){ ?>
+
     <header>
         
         
@@ -143,38 +97,13 @@
 			<ul>
                                  <li><div id="logo" class="DivLogo"><img src="application/views/images/logoLSM.png" width="70" height="70"/></div></li>
                               
-                                 <li><a href="html/quienes.php">&iquest;Qui&eacute;nes somos?</a></li>
-                                 <li><a href="html/mision.php">Misi&oacute;n</a></li>
-                                 <li><a href="html/vision.php">Visi&oacute;n</a></li>
-				<li><a href="html/objetivos.php">Objetivos</a></li>
-                                <li><a href="html/contacto.php">Contacto</a></li>
+                                 <li><a href="quienes">&iquest;Qui&eacute;nes somos?</a></li>
+                                 <li><a href="mision">Misi&oacute;n</a></li>
+                                 <li><a href="vision">Visi&oacute;n</a></li>
+				<li><a href="objetivos">Objetivos</a></li>
+                                <li><a href="contacto">Contacto</a></li>
 			</ul>
 		</nav>
-    </header>
-
-<?php }else {?> 
-    
-   <header>
-        
-        
-		<nav>
-                    
-                    
-			<ul>
-                                 <li><div id="logo" class="DivLogo"><img src="application/views/images/logoLSM.png" width="70" height="70"/></div></li>
-                              
-                                 <li><a href="../index.php">Inicio</a></li>
-                                 <li><a href="../html/mision.php">Misi&oacute;n</a></li>
-                                 <li><a href="../html/vision.php">Visi&oacute;n</a></li>
-				<li><a href="../html/objetivos.php">Objetivos</a></li>
-                                <li><a href="../html/contacto.php">Contacto</a></li>
-			</ul>
-		</nav>
-    </header>
-    
-   <?php } ?>   
-    
-        
-        
+    </header>       
 
 
