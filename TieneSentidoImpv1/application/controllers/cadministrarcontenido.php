@@ -29,7 +29,7 @@ class cadministrarcontenido extends CI_Controller {
     /**
      * Función que consulta todo el contenido en la base de datos:         * 
      */
-    public static function obtenerRecursos() {
+    public static function obtenerRecursos() {        
         $ci=  get_instance();
         $ci->load->database();
         $query = $ci->db->query("SELECT * FROM ts_db_usuarios");
@@ -71,7 +71,7 @@ class cadministrarcontenido extends CI_Controller {
         $query = $ci->db->query($strquery);                
         $d=$query->result();
         //print_r ($query->result());       
-        //echo ($d[0]->Mensaje);       
+        //echo ($d[0]->Mensaje);
         return ($d[0]->Mensaje);
        //return $ArregloRecursos;
     }
@@ -90,8 +90,8 @@ class cadministrarcontenido extends CI_Controller {
         $query = $ci->db->query($strquery);                
         $d=$query->result();
         //print_r ($query->result());       
-        echo ($d[0]->Mensaje);       
-        //return ($d[0]->Mensaje);
+        //echo ($d[0]->Mensaje);       
+        return ($d[0]->Mensaje);
        //return $ArregloRecursos;
     }
     

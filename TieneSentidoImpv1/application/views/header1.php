@@ -41,7 +41,7 @@
     <link rel="stylesheet" type="text/css" href="application/views/css/970_6_10.css"/>
     <link rel="shortcut icon" type="image/xicon" href="application/images/favicon.ico"/>
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" type="text/css" href="application/helpers/utilidades/skdslider/src/skdslider.css"/>
+    <link rel="stylesheet" type="text/css" href="recursospublicos/utilidades/skdslider/src/skdslider.css"/>
     
     <style type="text/css">
     .demo-code{ background-color:#ffffff; border:1px solid #333333; display:block; padding:10px;}
@@ -51,10 +51,10 @@
     </style>
     
     
-    <script type="text/javascript" language="javascript" src="application/controllers/javascripts/jquery-1.10.2.js"></script>
-    <script type="text/javascript" language="javascript" src="application/controllers/javascripts/funciones.js" ></script>
+    <script type="text/javascript" language="javascript" src="recursospublicos/javascripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" language="javascript" src="recursospublicos/javascripts/funciones.js" ></script>
     <!--<script type="text/javascript" language="javascript" src="PublicResources/utilidades/js/modernizr.custom.86080.js"></script>-->
-    <script type="text/javascript" laguage="javascript" src="application/helpers/utilidades/skdslider/src/skdslider.min.js"></script>
+    <script type="text/javascript" laguage="javascript" src="recursospublicos/utilidades/skdslider/src/skdslider.min.js"></script>
     
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

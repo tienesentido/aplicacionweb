@@ -3,30 +3,30 @@
 <div id="demo" class="skdslider">
 <ul>
 <li>
-    <img src="application/helpers/utilidades/skdslider/slides/1.jpg" />
+    <img src="recursospublicos/utilidades/skdslider/slides/1.jpg" />
 <!--Slider Description example-->
  <div class="slide-desc">
 		<h2>Slider Title 1</h2>
 		<p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
   </div>
 </li>
-<li><img src="application/helpers/utilidades/skdslider/slides/2.jpg" />
+<li><img src="recursospublicos/utilidades/skdslider/slides/2.jpg" />
    <div class="slide-desc">
 		<h2>Slider Title 2</h2>
 		<p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
   </div>
 </li>
-<li><img src="application/helpers/utilidades/skdslider/slides/3.jpeg" />
+<li><img src="recursospublicos/utilidades/skdslider/slides/3.jpeg" />
 <!--NO Description Here-->
 </li>
-<li><img src="application/helpers/utilidades/skdslider/slides/4.jpg" />
+<li><img src="recursospublicos/utilidades/skdslider/slides/4.jpg" />
   <div class="slide-desc">
 		<h2>Slider Title 4</h2>
 		<p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
   </div>
 </li>
-<li><img src="application/helpers/utilidades/skdslider/slides/5.jpg" /></li>
-<li><img src="application/helpers/utilidades/skdslider/slides/6.jpg" />
+<li><img src="recursospublicos/utilidades/skdslider/slides/5.jpg" /></li>
+<li><img src="recursospublicos/utilidades/skdslider/slides/6.jpg" />
   <div class="slide-desc">
 		<h2>Slider Title 6</h2>
 		<p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
@@ -59,17 +59,17 @@
 <div id="demo1"  class="skdslider">
 <ul>
 <li>
-<img height="485" src="application/helpers/utilidades/skdslider/slides/1.jpg" />
+<img height="485" src="recursospublicos/utilidades/skdslider/slides/1.jpg" />
 </li>
-<li><img height="485" src="application/helpers/utilidades/skdslider/slides/2.jpg" />
+<li><img height="485" src="recursospublicos/utilidades/skdslider/slides/2.jpg" />
 </li>
-<li><img height="485" src="application/helpers/utilidades/skdslider/slides/3.jpeg" />
+<li><img height="485" src="recursospublicos/utilidades/skdslider/slides/3.jpeg" />
 <!--NO Description Here-->
 </li>
-<li><img height="485" src="application/helpers/utilidades/skdslider/slides/4.jpg" />
+<li><img height="485" src="recursospublicos/utilidades/skdslider/slides/4.jpg" />
 </li>
-<li><img height="485" src="application/helpers/utilidades/skdslider/slides/5.jpg" /></li>
-<li><img height="485" src="application/helpers/utilidades/skdslider/slides/6.jpg" />
+<li><img height="485" src="recursospublicos/utilidades/skdslider/slides/5.jpg" /></li>
+<li><img height="485" src="recursospublicos/utilidades/skdslider/slides/6.jpg" />
 
 </li>
 </ul>
