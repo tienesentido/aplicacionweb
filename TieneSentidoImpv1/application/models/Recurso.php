@@ -20,9 +20,7 @@ class Recurso {
     public $Categoria="";
     public $Tipo="";
     public $Direccion="";
-    public $Descripcion="";    
-    public $Correo=""; 
-    public $Password=""; 
+    public $Descripcion="";      
 }
 
 ?>

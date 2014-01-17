@@ -46,6 +46,55 @@ class cadministrarcontenido extends CI_Controller {
         //print_r($ArregloRecursos);//Solo para pruebas      
         return $ArregloRecursos;
     }    
+    
+    /**
+     * Función que agrega contenido en la base de datos:         * 
+     * @param Integer $eIdUsuario Es el id del usuario que insertara un contenido
+     * @param String $eNombre Es el nombre del contenido que se insertara
+     * @param Integer $eCategoria Es la categoria a la que pertenece el contenido que insertara
+     * @param Integer $eTipo Es el tipo del contenido que se insertara
+     * @param String $eDescripcion Es la descripcion del contenido que se insertara
+     */
+    public static function agregarRecurso($eIdUsuario,$eNombre,$eCategoria,$eTipo,$eDescripcion) {
+        $ci=  get_instance();
+        $ci->load->database();
+        $eTamano="1";//FALTA verificar como determinar el tamaño de un archivo
+        $eDireccion="a";//FALTA verificar como determinar la direccion del archivo
+        $strquery="SELECT agregarRecurso("
+                  ."'".$eNombre."'".
+                  ",".$eTamano."".
+                  ",".$eCategoria."".
+                  ",".$eTipo."".
+                  ",'".$eDireccion."'".
+                  ",".$eIdUsuario."".
+                  ",'".$eDescripcion."') as Mensaje;";
+        $query = $ci->db->query($strquery);                
+        $d=$query->result();
+        //print_r ($query->result());       
+        //echo ($d[0]->Mensaje);       
+        return ($d[0]->Mensaje);
+       //return $ArregloRecursos;
+    }
+    
+    /**
+     * Función que elimina un contenido en la base de datos:         * 
+     * @param Integer $eIdRecurso Es el identificador del recurso que se desea eliminar
+     */
+    public static function eliminarRecurso($eIdRecurso) {
+        $ci=  get_instance();
+        $ci->load->database();
+        $eTamano="1";//FALTA verificar como determinar el tamaño de un archivo
+        $eDireccion="a";//FALTA verificar como determinar la direccion del archivo
+        $strquery="SELECT eliminarRecurso(".                  
+                  $eIdRecurso.") as Mensaje;";
+        $query = $ci->db->query($strquery);                
+        $d=$query->result();
+        //print_r ($query->result());       
+        echo ($d[0]->Mensaje);       
+        //return ($d[0]->Mensaje);
+       //return $ArregloRecursos;
+    }
+    
 }
 
 /* End of file welcome.php */
