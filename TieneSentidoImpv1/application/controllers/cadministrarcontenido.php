@@ -1,7 +1,9 @@
 <?php
+
 include_once 'application/models/Recurso.php';
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
+
 class cadministrarcontenido extends CI_Controller {
 
     /**
@@ -21,7 +23,6 @@ class cadministrarcontenido extends CI_Controller {
      */
     public function index() {
         $this->load->view('administrarcontenido');
-        
     }
 
     const CATEGORIA_TODAS = 0;
@@ -29,24 +30,24 @@ class cadministrarcontenido extends CI_Controller {
     /**
      * Función que consulta todo el contenido en la base de datos:         * 
      */
-    public static function obtenerRecursos() {        
-        $ci=  get_instance();
+    public static function obtenerRecursos() {
+        $ci = get_instance();
         $ci->load->database();
         $query = $ci->db->query("SELECT * FROM ts_db_usuarios");
-        $ArregloRecursos= "";
-        $i=0;
-        foreach ($query->result() as $row) {            
-            $recursoregistraro=new Recurso();
-            $recursoregistraro->Nombre=$row->nombre;
-            $recursoregistraro->Correo=$row->correo;
-            $recursoregistraro->Password=$row->password;
-            $ArregloRecursos[$i]=$recursoregistraro;
+        $ArregloRecursos = "";
+        $i = 0;
+        foreach ($query->result() as $row) {
+            $recursoregistraro = new Recurso();
+            $recursoregistraro->Nombre = $row->nombre;
+            $recursoregistraro->Correo = $row->correo;
+            $recursoregistraro->Password = $row->password;
+            $ArregloRecursos[$i] = $recursoregistraro;
             $i++;
         }
         //print_r($ArregloRecursos);//Solo para pruebas      
         return $ArregloRecursos;
-    }    
-    
+    }
+
     /**
      * Función que agrega contenido en la base de datos:         * 
      * @param Integer $eIdUsuario Es el id del usuario que insertara un contenido
@@ -55,46 +56,70 @@ class cadministrarcontenido extends CI_Controller {
      * @param Integer $eTipo Es el tipo del contenido que se insertara
      * @param String $eDescripcion Es la descripcion del contenido que se insertara
      */
-    public static function agregarRecurso($eIdUsuario,$eNombre,$eCategoria,$eTipo,$eDescripcion) {
-        $ci=  get_instance();
+    public static function agregarRecurso($eIdUsuario, $eNombre, $eCategoria, $eTipo, $eDescripcion) {
+        $ci = get_instance();
         $ci->load->database();
-        $eTamano="1";//FALTA verificar como determinar el tamaño de un archivo
-        $eDireccion="a";//FALTA verificar como determinar la direccion del archivo
-        $strquery="SELECT agregarRecurso("
-                  ."'".$eNombre."'".
-                  ",".$eTamano."".
-                  ",".$eCategoria."".
-                  ",".$eTipo."".
-                  ",'".$eDireccion."'".
-                  ",".$eIdUsuario."".
-                  ",'".$eDescripcion."') as Mensaje;";
-        $query = $ci->db->query($strquery);                
-        $d=$query->result();
+        $eTamano = "1"; //FALTA verificar como determinar el tamaño de un archivo
+        $eDireccion = "a"; //FALTA verificar como determinar la direccion del archivo
+        $strquery = "SELECT agregarRecurso("
+                . "'" . $eNombre . "'" .
+                "," . $eTamano . "" .
+                "," . $eCategoria . "" .
+                "," . $eTipo . "" .
+                ",'" . $eDireccion . "'" .
+                "," . $eIdUsuario . "" .
+                ",'" . $eDescripcion . "') as Mensaje;";
+        $query = $ci->db->query($strquery);
+        $d = $query->result();
         //print_r ($query->result());       
         //echo ($d[0]->Mensaje);
         return ($d[0]->Mensaje);
-       //return $ArregloRecursos;
+        //return $ArregloRecursos;
     }
-    
+
     /**
      * Función que elimina un contenido en la base de datos:         * 
      * @param Integer $eIdRecurso Es el identificador del recurso que se desea eliminar
      */
     public static function eliminarRecurso($eIdRecurso) {
-        $ci=  get_instance();
+        $ci = get_instance();
         $ci->load->database();
-        $eTamano="1";//FALTA verificar como determinar el tamaño de un archivo
-        $eDireccion="a";//FALTA verificar como determinar la direccion del archivo
-        $strquery="SELECT eliminarRecurso(".                  
-                  $eIdRecurso.") as Mensaje;";
-        $query = $ci->db->query($strquery);                
-        $d=$query->result();
+        $eTamano = "1"; //FALTA verificar como determinar el tamaño de un archivo
+        $eDireccion = "a"; //FALTA verificar como determinar la direccion del archivo
+        $strquery = "SELECT eliminarRecurso(" .
+                $eIdRecurso . ") as Mensaje;";
+        $query = $ci->db->query($strquery);
+        $d = $query->result();
         //print_r ($query->result());       
         //echo ($d[0]->Mensaje);       
         return ($d[0]->Mensaje);
-       //return $ArregloRecursos;
+        //return $ArregloRecursos;
     }
-    
+
+    /**
+     * Función que elimina un contenido en la base de datos:         * 
+     * @param Integer $eIdRecurso Es el identificador del recurso que se desea eliminar
+     */
+    public static function modificarRecurso($eIdRecurso, $eNombre, $eCategoria, $eDireccion, $eTipo, $eDescripcion) {
+        $ci = get_instance();
+        $ci->load->database();
+        $eTamano = "1"; //FALTA verificar como determinar el tamaño de un archivo
+        $eDireccion = "a"; //FALTA verificar como determinar la direccion del archivo
+        $strquery = "SELECT modificarRecurso(" .
+                $eIdRecurso . "" .
+                ",'" . $eNombre . "'" .
+                "," . $eCategoria . "" .
+                ",'" . $eDireccion . "'" .
+                "," . $eTipo . "" .
+                ",'" . $eDescripcion . "') as Mensaje;";
+        $query = $ci->db->query($strquery);
+        $d = $query->result();
+        //print_r ($query->result());       
+        echo ($d[0]->Mensaje);       
+        return ($d[0]->Mensaje);
+        //return $ArregloRecursos;
+    }
+
 }
 
 /* End of file welcome.php */
